@@ -47,3 +47,9 @@ button {
   border-radius: 5px;
   gap: 10px;
 }
+button:hover {
+  background-color: aliceblue;
+  color: black;
+  font-size: large;
+  transition: 0.2s;
+}

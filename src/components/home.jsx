@@ -8,7 +8,7 @@ const Home = () => {
        </div>
        <div className={Style.hometext}>
        <h1>DICE GAME</h1>
-       <button>Play Now</button>
+       <button><strong>Play Now</strong></button>
        </div>
     </div>
   )
