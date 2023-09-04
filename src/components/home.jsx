@@ -1,5 +1,6 @@
 import React from 'react'
 import Style from './home.module.css';
+import Playpage from './playpage';
 const Home = () => {
   return (
     <div className={Style.Homecontainer}>
@@ -8,7 +9,9 @@ const Home = () => {
        </div>
        <div className={Style.hometext}>
        <h1>DICE GAME</h1>
-       <button><strong>Play Now</strong></button>
+       <button  onClick={Playpage}><strong>Play Now</strong>
+        <script>console.log("hello");</script>
+        </button>
        </div>
     </div>
   )
