@@ -1,6 +1,19 @@
-*{
-    /* background-color: pink */
-}
-container{
+
+.topsection{
     background-color: pink;
+    height: 151px;
+    width: 90%;
+    /* padding: 50px; */
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.score{
+
+}
+.numberSquaresContainer{
+    display: flex;
+    flex-direction: column;
+
+    background-color: red;
 }
