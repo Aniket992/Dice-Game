@@ -8,10 +8,13 @@ const Playpage = () => {
       <div className={Style.topsection}>
         <div className={Style.score}>
           <p>0</p>
-          <p id='Total Score'>Total Score</p>
+          <div className={Style.totalscore}>
+          <p>Total Score</p>
+          </div>
         </div>
         <div className={Style.numberSquaresContainer}>
           <NumberSquares /> {/* Render the NumberSquares component here */}
+         <p>Select Number</p>
         </div>
       </div>
     </div>

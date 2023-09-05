@@ -5,7 +5,8 @@ const NumberSquares = () => {
   const numbers = [1, 2, 3, 4, 5, 6];
 
   return (
-    <div>
+    <>
+    <div className={Style.container}>
       {numbers.map((number, index) => (
         <div
           key={index}
@@ -15,7 +16,9 @@ const NumberSquares = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
+
 
 export default NumberSquares;

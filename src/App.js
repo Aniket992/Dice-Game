@@ -12,12 +12,12 @@ function App() {
 
   return (
     <div>
-      <Playpage/>
-      {/* {showPlaypage ? (
+      {/* <Playpage/> */}
+      {showPlaypage ? (
         <Playpage />
       ) : (
         <Home onPlayNowClick={handlePlayNowClick} />
-      )} */}
+      )}
     </div>
   );
 }

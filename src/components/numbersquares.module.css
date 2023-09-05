@@ -1,10 +1,22 @@
-.squares{
-    width: 72px;
-    height: 72px;
-    border:1px solid black;
-    text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-    align-items: center;
-  }
+.container {
+  display: flex;
+}
+.squares {
+  width: 72px;
+  height: 72px;
+  border: 1px solid black;
+  margin-right: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  cursor: pointer;
+}
+.squares:hover {
+  background-color: black;
+  color: white;
+}
