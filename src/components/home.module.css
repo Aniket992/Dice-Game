@@ -80,7 +80,7 @@ button:hover {
 }
 
 @media (max-width: 1200px){
-  img{
+  .diceimage img{
     width: 500px;
   }
   h1 {
