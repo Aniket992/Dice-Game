@@ -2,6 +2,7 @@
   display: flex;
 }
 .squares {
+  /* position:sticky; */
   width: 72px;
   height: 72px;
   border: 1px solid black;
@@ -15,6 +16,12 @@
   font-weight: 700;
   line-height: 36px;
   cursor: pointer;
+}
+@media(max-width:555px){
+  .squares{
+    width: 35px;
+    height: 35px;
+  }
 }
 .squares:hover {
   background-color: green;

@@ -1,16 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+}
 .topsection {
   
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
   border-radius: 7px;
+  
+}
+@media (max-width: 1068px) {
+  .topsection {
+    flex-direction: column; /* Change to "column" for small screens */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+  }
 }
 .topsection p{
   margin-top: -20px;
   font-family: Poppins;
-  font-size: 100px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 200;
   letter-spacing: 0em;
   align-items: center;
 }
@@ -44,16 +58,16 @@
  .lose p{
   margin-top: -20px;
   font-family: Poppins;
-  font-size: 100px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 200;
   letter-spacing: 0em;
   align-items: center;
 }
 .win p{
   margin-top: -20px;
   font-family: Poppins;
-  font-size: 100px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 200;
   letter-spacing: 0em;
   align-items: center;
 }
@@ -74,28 +88,31 @@
   margin-top: -20px;
 }
 .win{
-  background-color: chartreuse;
+  /* background-color:rgb(100, 186, 212); */
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 7px;
-  width: 230px;
+  width: 160px;
 }
 .lose{
-  background-color:red;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 7px;
-  width: 230px;
+   /* background-color:rgb(100, 186, 212); */
+   text-align: center;
+   /* border: 1px solid black; */
+   border-radius: 7px;
+   width: 160px;
 }
 .container{
   background-color: cornsilk;
   padding: 10px;
+  /* margin: -10px; */
+  /* height:auto; */
+  /* width: 100vh; */
 }
 .score p{
   margin-top: -20px;
   font-family: Poppins;
-  font-size: 100px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 200;
   letter-spacing: 0em;
   align-items: center;
 }
@@ -106,11 +123,34 @@
   line-height: 36px;
   letter-spacing: 0em;
   margin-top: -20px;
+ 
+}
+@media (max-width: 555px){
+  .score pre{
+    font-size: 14px;
+
+  }
+  .win pre{
+    font-size: 14px;
+
+  }
+  .lose pre{
+    font-size: 14px;
+
+  }
 }
 .score{
-  background-color:rgb(100, 186, 212);
+  /* background-color:rgb(100, 186, 212); */
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 7px;
-  width: 230px;
+  width: 160px;
+}
+.scoringSection{
+  display: flex;
+}
+@media (max-width: 568px){
+  .scoringSection{
+
+  }
 }

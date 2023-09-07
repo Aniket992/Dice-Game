@@ -11,8 +11,10 @@ const Playpage = () => {
 
   return (
     <>
+    <div>
       <div className={Style.container}>
         <div className={Style.topsection}>
+          <div className={Style.scoringSection}>
         <div className={Style.win}>
           <p>{winningScore}</p>
           <pre>Wining Score</pre>
@@ -27,7 +29,8 @@ const Playpage = () => {
             <p>{score}</p>
               <pre>Total Score</pre>
           </div>
-          
+          </div>
+
           
           <div className={Style.numberSquaresContainer}>
             <NumberSquares setSelectedNumber={setSelectedNumber} 
@@ -39,6 +42,7 @@ const Playpage = () => {
           setwinningScore = {setwinningScore} 
           setloosingScore = {setloosingScore} 
           setSelectedNumber={setSelectedNumber} />
+      </div>
       </div>
     </>
   );
