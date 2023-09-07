@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 .squares:hover {
-  background-color: black;
+  background-color: green;
+  color: white;
+}
+.selected{
+  background-color: green;
   color: white;
 }
