@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Style from "./centerbox.module.css";
 
-const Centerbox = ({ selectedNumber, setScore, resetSelectedNumber }) => {
+const Centerbox = ({ selectedNumber, setScore,
+setwinningScore,setloosingScore ,setSelectedNumber}) => {
   const imageUrls = [
     "dice_1.png",
     "dice_2.png",
@@ -19,14 +20,13 @@ const Centerbox = ({ selectedNumber, setScore, resetSelectedNumber }) => {
       const randomIndex = Math.floor(Math.random() * imageUrls.length);
       setCurrentImage(imageUrls[randomIndex]);
       const dicenumber = randomIndex + 1;
-      {
-        console.log(dicenumber);
-        console.log(selectedNumber);
-      }
+     
       if (selectedNumber === dicenumber) {
         setScore((prevScore) => prevScore + dicenumber);
+        setwinningScore((wins) =>wins + dicenumber)
       } else {
         setScore((prevScore) => prevScore - 2);
+        setloosingScore((lose) => lose + 2);
       }
     } else {
       alert("Please select a number before rolling the dice.");
@@ -39,7 +39,9 @@ const Centerbox = ({ selectedNumber, setScore, resetSelectedNumber }) => {
 
   const reset = () => {
     setScore(0);
-    resetSelectedNumber();
+    setSelectedNumber(null);
+    setloosingScore(0);
+    setwinningScore(0);
   };
 
   return (

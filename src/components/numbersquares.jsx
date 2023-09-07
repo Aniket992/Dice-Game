@@ -14,9 +14,9 @@ const NumberSquares = ({ setSelectedNumber, selectedNumber }) => {
         {numbers.map((number, index) => (
           <div
             key={index}
-            
             className={`${Style.squares} ${
-              selectedNumber === number ? Style.selected : ""}`}
+              selectedNumber === number ? Style.selected : ""
+            }`}
             onClick={() => handleBoxClick(number)}
           >
             {number}
