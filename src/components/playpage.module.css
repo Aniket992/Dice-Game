@@ -88,10 +88,8 @@
   width: 230px;
 }
 .container{
-  border: 2px solid black;
   background-color: cornsilk;
-  margin: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 .score p{
   margin-top: -20px;
