@@ -22,6 +22,11 @@
     width: 35px;
     height: 35px;
   }
+} 
+  @media(max-width:555px){
+    p{
+      text-align: center;
+    }
 }
 .squares:hover {
   background-color: green;

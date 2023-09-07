@@ -9,17 +9,20 @@ const Home = ({ onPlayNowClick }) => {
   };
 
   return (
+    <>
     <div className={Style.Homecontainer}>
       <div className={Style.diceimage}>
         <img src="dices 1.png" alt="" />
       </div>
       <div className={Style.hometext}>
-        <h1>DICE GAME</h1>
-        <button onClick={handlePlayNowClick}>
+        <div><h1>DICE GAME</h1></div>
+        <div><button onClick={handlePlayNowClick}>
           <strong>Play Now</strong>
         </button>
+        </div>
       </div>
     </div>
+    </>
   );
 };
 
